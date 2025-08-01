@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-banco
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Senha123
+      MYSQL_DATABASE: meubanco
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
+    networks:
+      - redeapp
+
+  backend:
+    build: ./backend
+    container_name: php-backend
+    ports:
+      - "8000:80"
+    depends_on:
+      - mysql
+    networks:
+      - redeapp
+
+networks:
+  redeapp:
+    driver: bridge
+
+  frontend:
+    build: ./frontend
+    container_name: nginx-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks:
+      - redeapp
