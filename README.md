@@ -81,4 +81,4 @@ Veja o arquivo LICENSE para mais detalhes.
 Desenvolvedor em transição de carreira, apaixonado por tecnologia, qualidade de código e boas práticas. Sempre aprendendo, sempre evoluindo. 🚀
 
 ## 👤 Desenvolvido por
-Gustavo N. Bezerra - LinkedIn | GitHub |gustavonunnes@hotmail.com
+Gustavo N. Bezerra - [LinkedIn](https://www.linkedin.com/in/gustavo-nunnes) | [GitHub](https://github.com/GNunnes) |<i>gustavonunnes@hotmail.com</i> 
