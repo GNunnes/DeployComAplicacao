@@ -73,7 +73,7 @@ CREATE TABLE mensagens (
   email VARCHAR(100),
   comentario TEXT
 );
-```
+
 ## 📄 Licença
 Este projeto está sob a licença MIT.
 Veja o arquivo LICENSE para mais detalhes.
